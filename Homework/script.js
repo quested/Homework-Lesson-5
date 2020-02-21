@@ -65,6 +65,16 @@ console.log(newResult1);
 // Задача 5
 var names = ['Vlad', 'Max', 'Lena', 'Masha'];
 
+
+for (i = 0; i < names.length; i++) {
+    var copyNames = [];
+    if (i.length < 4) {
+        copyNames[i] = names[i];
+    } //не работает цикл, не пойму почему
+}
+console.log(copyNames);
+
+
 var newNames = names.filter(function(item) {
     return item.length < 4;
 }
