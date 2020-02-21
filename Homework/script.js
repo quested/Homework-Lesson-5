@@ -37,11 +37,19 @@ console.log(result);
 // Задача 3
 var newSum = 0;
 
+for (i = 0; i < numbers.length; i++) {
+    newSum = newSum + numbers[i] + result[i] + newNumbers[i];
+}
+console.log(newSum);
+
+
+var newSum2 = 0;
+
 numbers.forEach(function(item, i) {
-    newSum = newSum + item + numbers[i] + newNumbers[i];
+    newSum2 = newSum2 + item + result[i] + newNumbers[i];
 }
 )
-console.log(newSum);
+console.log(newSum2);
 
 
 
